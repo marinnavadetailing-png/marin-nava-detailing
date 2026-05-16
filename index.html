@@ -43,7 +43,7 @@
 
         <div class="service-area">
           <strong>📍 Proudly Serving Sonoma County</strong>
-          <p>We also service areas further out. Additional transportation fee may apply.</p>
+          <p>Serving Santa Rosa, Petaluma, Rohnert Park, Windsor, Cotati, Penngrove, Sonoma, Glen Ellen, Healdsburg, and nearby areas. Additional transportation fee may apply for farther locations.</p>
         </div>
       </div>
 
@@ -88,28 +88,40 @@
       <div class="section-title">
         <p class="eyebrow">Our Work</p>
         <h2>Before & After Transformations</h2>
-        <p>Real results from real cars. Add your own photos anytime.</p>
+        <p>Real results from real cars.</p>
       </div>
       <div class="work-grid">
         <div class="work-card"><div class="split-photo"><span>Before</span><span>After</span></div><h3>Paint Decontamination</h3></div>
         <div class="work-card"><div class="split-photo"><span>Before</span><span>After</span></div><h3>Wheel & Tire Restoration</h3></div>
         <div class="work-card"><div class="split-photo"><span>Before</span><span>After</span></div><h3>Interior Detailing</h3></div>
-        <div class="work-card"><div class="split-photo"><span>Before</span><span>After</span></div><h3>Complete Exterior Detail</h3></div>
+        <div class="work-card highlight-card">
+          <div class="compare-slider small" style="--position: 50%;">
+            <img class="before-img" src="assets/gallery/headlight-before.png" alt="Before headlight restoration">
+            <img class="after-img" src="assets/gallery/headlight-after.png" alt="After headlight restoration">
+            <div class="slider-line"></div>
+            <div class="slider-button">↔</div>
+            <input type="range" min="0" max="100" value="50" aria-label="Move to compare before and after headlight restoration">
+            <span class="before-label">Before</span><span class="after-label">After</span>
+          </div>
+          <h3>Headlight Restoration</h3>
+        </div>
       </div>
       <a class="btn ghost centered" href="gallery.html">📷 View Full Gallery</a>
     </section>
 
     <section id="pricing" class="pricing section-pad compact">
-      <div>
-        <p class="eyebrow">Starting Prices</p>
+      <div class="pricing-main">
+        <p class="eyebrow">Our Pricing</p>
         <h2>Simple. Transparent. Fair.</h2>
-        <p>High-quality mobile detailing at honest prices.</p>
+        <p>High-quality mobile detailing at honest prices. Final pricing can vary by vehicle size, condition, and severity.</p>
+        <h3 class="pricing-label">Main Packages</h3>
         <div class="pricing-grid" id="pricingGrid"></div>
       </div>
-      <div class="price-cta" id="contact">
-        <p class="eyebrow">Ready To Give Your Ride The Glow It Deserves?</p>
-        <p>Whether it’s a quick refresh or a full transformation, we’ve got you covered.</p>
-        <a class="btn primary" href="sms:7074777017">Let's Get Started →</a>
+      <div class="addons-panel" id="contact">
+        <h3>Additional Add-Ons</h3>
+        <div id="addonsGrid"></div>
+        <p class="fine-print">Add-ons can be included with any package. Paint polishing and ceramic coating are coming soon.</p>
+        <a class="btn primary" href="sms:7074777017">Text Us To Book →</a>
         <a class="btn ghost" href="tel:7074777017">☎ Call 707-477-7017</a>
       </div>
     </section>

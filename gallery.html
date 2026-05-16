@@ -21,16 +21,57 @@
     <div class="section-title">
       <p class="eyebrow">Our Work Gallery</p>
       <h1>Before & After Results</h1>
-      <p>Replace these placeholders with your real before and after photos whenever you’re ready.</p>
+      <p>Slide the line to compare before and after results.</p>
     </div>
 
     <div class="gallery-grid">
-      <article class="gallery-card"><div class="photo-placeholder">📸</div><h3>Before & After Paint Decontamination</h3><p>Photo coming soon</p></article>
+      <article class="gallery-card wide-card">
+        <div class="compare-slider" style="--position: 50%;">
+          <img class="before-img" src="assets/gallery/headlight-before.png" alt="Before headlight restoration">
+          <img class="after-img" src="assets/gallery/headlight-after.png" alt="After headlight restoration">
+          <div class="slider-line"></div>
+          <div class="slider-button">↔</div>
+          <input type="range" min="0" max="100" value="50" aria-label="Move to compare before and after headlight restoration">
+          <span class="before-label">Before</span><span class="after-label">After</span>
+        </div>
+        <h3>Headlight Restoration</h3>
+        <p>Restored clarity and a cleaner front-end look.</p>
+      </article>
+
+      <article class="gallery-card wide-card">
+        <div class="compare-slider" style="--position: 50%;">
+          <img class="before-img" src="assets/gallery/exterior-before.png" alt="Before exterior detail">
+          <div class="after-img missing-after"><span>Upload exterior-after.png here</span></div>
+          <div class="slider-line"></div>
+          <div class="slider-button">↔</div>
+          <input type="range" min="0" max="100" value="50" aria-label="Move to compare before and after exterior detail">
+          <span class="before-label">Before</span><span class="after-label">After</span>
+        </div>
+        <h3>Exterior Detail</h3>
+        <p>Foam wash, wheels, tires, and clean exterior shine.</p>
+      </article>
+
+      <article class="gallery-card wide-card">
+        <div class="compare-slider" style="--position: 50%;">
+          <div class="before-img missing-after"><span>Upload interior-before.png here</span></div>
+          <div class="after-img missing-after"><span>Upload interior-after.png here</span></div>
+          <div class="slider-line"></div>
+          <div class="slider-button">↔</div>
+          <input type="range" min="0" max="100" value="50" aria-label="Move to compare before and after interior detail">
+          <span class="before-label">Before</span><span class="after-label">After</span>
+        </div>
+        <h3>Interior Detail</h3>
+        <p>Deep vacuum, steam cleaning, and tight spot cleaning.</p>
+      </article>
+
+      <article class="gallery-card">
+        <img class="gallery-photo" src="assets/gallery/interior-trunk-original.png" alt="Clean interior trunk detail result">
+        <h3>Interior Detail Result</h3>
+        <p>Clean trunk and interior finish.</p>
+      </article>
+
       <article class="gallery-card"><div class="photo-placeholder">📸</div><h3>Wheel & Tire Restoration</h3><p>Photo coming soon</p></article>
-      <article class="gallery-card"><div class="photo-placeholder">📸</div><h3>Interior Steam Cleaning</h3><p>Photo coming soon</p></article>
-      <article class="gallery-card"><div class="photo-placeholder">📸</div><h3>Complete Exterior Transformation</h3><p>Photo coming soon</p></article>
       <article class="gallery-card"><div class="photo-placeholder">📸</div><h3>Showroom Package Result</h3><p>Photo coming soon</p></article>
-      <article class="gallery-card"><div class="photo-placeholder">📸</div><h3>Clay Bar + Wax Finish</h3><p>Photo coming soon</p></article>
     </div>
 
     <div class="gallery-socials">
@@ -40,5 +81,6 @@
   </main>
 
   <footer><p>© 2026 Marin Nava Detailing. All rights reserved.</p></footer>
+  <script src="script.js"></script>
 </body>
 </html>
