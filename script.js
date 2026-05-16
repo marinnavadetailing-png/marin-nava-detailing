@@ -1,23 +1,23 @@
 // EDIT YOUR WEBSITE HERE ONLY
 const pricing = [
   {
-    name: "Interior Revival",
+    name: "Regular Interior Detail",
     price: "$90-$150",
-    description: "Deep interior cleaning for vehicles with heavy use, pet hair, stains, or smells.",
-    features: ["Deep interior cleaning", "Odor elimination", "Dashboard & console cleaning", "Vacuum and wipe down"]
+    description: "Interior cleaning with steam included. Price depends on vehicle size and condition.",
+    features: ["Vacuum and wipe down", "Steam cleaning included", "Dashboard & console cleaning", "Seats, carpets, and mats cleaned"]
   },
   {
-    name: "Exterior Enhancement",
-    price: "$75-$95",
-    description: "Exterior wash and shine to boost curb appeal and protect your finish.",
-    features: ["Full exterior wash", "Wheel & tire cleaning", "Plastic trim restoration", "Paint protection"]
+    name: "Exterior Detail",
+    price: "$65-$75",
+    description: "Exterior wash and shine to boost curb appeal and leave the vehicle looking fresh.",
+    features: ["Full exterior wash", "Wheel & tire cleaning", "Tire shine", "Clean finish"]
   },
   {
     name: "Showroom Package",
-    price: "$150-$225",
+    price: "$150-$300",
     description: "Complete interior and exterior refresh for the best overall result.",
     featured: true,
-    features: ["Interior + exterior detail", "Full rejuvenation treatment", "Paint protection & shine", "Best overall value"]
+    features: ["Interior + exterior detail", "Steam cleaning included", "Full rejuvenation treatment", "Best overall value"]
   }
 ];
 
@@ -39,17 +39,17 @@ const extras = [
   },
   {
     name: "Clay Bar Treatment",
-    price: "Starting at $60",
+    price: "$60-$90",
     description: "Removes embedded contaminants and leaves the paint feeling smooth."
   },
   {
     name: "Wax Protection",
-    price: "Starting at $50",
-    description: "Adds shine and short-term protection to your paint."
+    price: "$35-$45",
+    description: "Add-on service that adds shine and short-term protection to your paint."
   },
   {
     name: "Clay Bar + Wax",
-    price: "Starting at $100",
+    price: "$90-$130",
     description: "Paint decontamination followed by wax protection for a smoother, cleaner finish."
   },
   {
