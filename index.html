@@ -3,94 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marin & Nava Detailing</title>
-  <meta name="description" content="Mobile car detailing service. Interior, exterior, showroom packages, wax, clay bar, water spot removal, and more." />
+  <title>Marin Nava Detailing | Mobile Detailing Sonoma County</title>
+  <meta name="description" content="Marin Nava Detailing offers premium mobile car detailing in Sonoma County and surrounding areas. Text 707-477-7017 to book." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="nav">
-    <a href="#home" class="brand">Marin & Nava Detailing</a>
-    <nav>
+  <header class="site-header">
+    <a href="#home" class="brand" aria-label="Marin Nava Detailing home">
+      <img src="assets/logo.png" alt="Marin Nava Detailing logo" />
+    </a>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
       <a href="#pricing">Pricing</a>
-      <a href="#extras">Extras</a>
-      <a href="#work">See Our Work</a>
+      <a href="gallery.html">Our Work</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a class="nav-cta" href="sms:7074777017">☎ Text Us</a>
   </header>
 
   <main>
-    <section id="home" class="hero section">
-      <div class="glow"></div>
-      <p class="eyebrow">Mobile detailing • We come to you</p>
-      <h1>Where your ride gets the glow-up it deserves.</h1>
-      <p class="hero-text">Interior and exterior detailing made simple. Choose a package, add extras, and text us at 707-477-7017 for booking or quotes.</p>
-      <div class="buttons">
-        <a class="btn primary" href="sms:7074777017">Text 707-477-7017 to Book</a>
-        <a class="btn secondary" href="tel:7074777017">Call Now</a>
+    <section id="home" class="hero section-pad">
+      <div class="hero-bg-logo" aria-hidden="true">
+        <img src="assets/logo.png" alt="" />
       </div>
-      <div class="social-row">
-        <a href="https://www.instagram.com/marin.nava.detailing?igsh=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.tiktok.com/@marinnava_detaili?_r=1&_t=ZP-96Pp8aWdC4l" target="_blank" rel="noopener">TikTok</a>
+
+      <div class="hero-content">
+        <p class="eyebrow">Premium Mobile Detailing</p>
+        <h1>Where Your Ride Gets The Glow <span>It Deserves.</span></h1>
+        <p class="hero-copy">Professional mobile detailing that brings the showroom to your driveway. Quality, trust, and perfection every time.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="sms:7074777017">☎ Text Us</a>
+          <a class="btn ghost" href="#pricing">Let's Get Started <span>→</span></a>
+        </div>
+
+        <div class="service-area">
+          <strong>📍 Proudly Serving Sonoma County</strong>
+          <p>We also service areas further out. Additional transportation fee may apply.</p>
+        </div>
+      </div>
+
+      <aside class="social-stack" aria-label="Social links">
+        <a class="social-card" href="https://www.instagram.com/marin.nava.detailing?igsh=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener">
+          <span class="social-icon">📸</span>
+          <span><strong>Instagram</strong><small>@marin.nava.detailing</small></span>
+          <b>→</b>
+        </a>
+        <a class="social-card" href="https://www.tiktok.com/@marinnava_detaili?_r=1&_t=ZP-96Pp8aWdC4l" target="_blank" rel="noopener">
+          <span class="social-icon">🎵</span>
+          <span><strong>TikTok</strong><small>@marinnava_detaili</small></span>
+          <b>→</b>
+        </a>
+      </aside>
+    </section>
+
+    <section id="about" class="about-card section-pad compact">
+      <div class="about-text">
+        <p class="eyebrow">About Us</p>
+        <h2>Detailing Is Our Passion</h2>
+        <p>Marin Nava Detailing is run by two college guys, Alex and Mateo Marin, who care about cars, hard work, and making every ride look its best. With 2+ years of experience, we bring reliable mobile detailing straight to you.</p>
+      </div>
+      <div class="value-grid">
+        <div><span>🛡️</span><h3>Quality</h3><p>Top-tier products and proven techniques.</p></div>
+        <div><span>⏱️</span><h3>Convenience</h3><p>We come to you so you can stay stress-free.</p></div>
+        <div><span>✨</span><h3>Attention To Detail</h3><p>No shortcuts. Every inch gets care.</p></div>
+        <div><span>🤝</span><h3>Trusted Service</h3><p>Reliable, professional, and committed.</p></div>
       </div>
     </section>
 
-    <section class="section intro">
-      <h2>Our Main Packages</h2>
-      <p>Prices may vary depending on vehicle size, condition, and severity. Sedans usually start at the lower price and larger or heavily soiled vehicles may cost more.</p>
-    </section>
-
-    <section id="pricing" class="section cards pricing-grid"></section>
-
-    <section id="extras" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Add-ons</p>
-        <h2>Additional Services</h2>
-        <p>Water stains, heavy stains, pet hair, polishing, and paint correction may require a custom quote after we see the vehicle.</p>
+    <section id="services" class="section-pad">
+      <div class="section-title">
+        <p class="eyebrow">Services</p>
+        <h2>Premium Detailing Options</h2>
+        <p>Choose what your vehicle needs. Final pricing can vary by size, condition, and severity.</p>
       </div>
-      <div class="cards extras-grid"></div>
+      <div class="services-grid" id="servicesGrid"></div>
     </section>
 
-    <section class="section about">
+    <section id="work" class="section-pad work-preview">
+      <div class="section-title">
+        <p class="eyebrow">Our Work</p>
+        <h2>Before & After Transformations</h2>
+        <p>Real results from real cars. Add your own photos anytime.</p>
+      </div>
+      <div class="work-grid">
+        <div class="work-card"><div class="split-photo"><span>Before</span><span>After</span></div><h3>Paint Decontamination</h3></div>
+        <div class="work-card"><div class="split-photo"><span>Before</span><span>After</span></div><h3>Wheel & Tire Restoration</h3></div>
+        <div class="work-card"><div class="split-photo"><span>Before</span><span>After</span></div><h3>Interior Detailing</h3></div>
+        <div class="work-card"><div class="split-photo"><span>Before</span><span>After</span></div><h3>Complete Exterior Detail</h3></div>
+      </div>
+      <a class="btn ghost centered" href="gallery.html">📷 View Full Gallery</a>
+    </section>
+
+    <section id="pricing" class="pricing section-pad compact">
       <div>
-        <p class="eyebrow">About us</p>
-        <h2>About Marin & Nava</h2>
-        <p>Marin & Nava Detailing is run by two college students, Alex and Mateo Marin, who are passionate about cars and helping people keep their vehicles clean, fresh, and protected. With 2+ years of experience, we bring reliable mobile detailing straight to you.</p>
+        <p class="eyebrow">Starting Prices</p>
+        <h2>Simple. Transparent. Fair.</h2>
+        <p>High-quality mobile detailing at honest prices.</p>
+        <div class="pricing-grid" id="pricingGrid"></div>
       </div>
-      <div class="stats">
-        <div><strong>5.0</strong><span>Star Rating</span></div>
-        <div><strong>2+</strong><span>Years Experience</span></div>
-        <div><strong>Mobile</strong><span>We Come To You</span></div>
-      </div>
-    </section>
-
-    <section id="work" class="section work">
-      <div class="section-heading">
-        <p class="eyebrow">Photos & videos</p>
-        <h2>See Our Work</h2>
-        <p>Check out our latest details, before-and-after photos, and videos on Instagram and TikTok.</p>
-      </div>
-      <div class="buttons center-buttons">
-        <a class="btn primary" href="https://www.instagram.com/marin.nava.detailing?igsh=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener">View Instagram Photos</a>
-        <a class="btn secondary" href="https://www.tiktok.com/@marinnava_detaili?_r=1&_t=ZP-96Pp8aWdC4l" target="_blank" rel="noopener">View TikTok Videos</a>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <p class="eyebrow">Ready to book?</p>
-      <h2>Get In Touch</h2>
-      <p>Text or call us with your vehicle type, service wanted, and a few pictures if you need a quote.</p>
-      <div class="contact-grid">
-        <a class="contact-card" href="tel:7074777017"><span>Call Us</span><strong>707-477-7017</strong></a>
-        <a class="contact-card" href="mailto:marinnavadetailing@gmail.com"><span>Email</span><strong>marinnavadetailing@gmail.com</strong></a>
-        <div class="contact-card"><span>Location</span><strong>Mobile Service</strong></div>
+      <div class="price-cta" id="contact">
+        <p class="eyebrow">Ready To Give Your Ride The Glow It Deserves?</p>
+        <p>Whether it’s a quick refresh or a full transformation, we’ve got you covered.</p>
+        <a class="btn primary" href="sms:7074777017">Let's Get Started →</a>
+        <a class="btn ghost" href="tel:7074777017">☎ Call 707-477-7017</a>
       </div>
     </section>
   </main>
 
-  <footer>© <span id="year"></span> Marin & Nava Detailing. All rights reserved.</footer>
+  <footer>
+    <p>© 2026 Marin Nava Detailing. All rights reserved.</p>
+    <p>Mobile Detailing • Sonoma County & Surrounding Areas</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

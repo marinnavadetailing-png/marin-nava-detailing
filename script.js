@@ -1,81 +1,41 @@
-// EDIT YOUR WEBSITE HERE ONLY
+/* EASY EDIT SECTION: change prices/services here */
+const services = [
+  { name: "Interior Detail", price: "$90–$150", description: "Vacuum, wipe down, steam cleaning, door jambs, mats, plastics, and interior refresh." },
+  { name: "Exterior Detail", price: "$65–$75", description: "Foam wash, hand wash, wheels, tires, windows, and clean exterior finish." },
+  { name: "Showroom Package", price: "$150–$300", description: "Interior + exterior detail for a full transformation. Price depends on size and condition." },
+  { name: "Clay Bar Treatment", price: "Starting at $60", description: "Removes embedded contaminants and leaves paint feeling smooth." },
+  { name: "Wax Protection", price: "$35–$45", description: "Adds gloss and short-term protection after your exterior wash." },
+  { name: "Clay Bar + Wax", price: "Starting at $95", description: "Paint decontamination plus gloss protection for a cleaner finish." },
+  { name: "Water Spot / Water Stain Removal", price: "Quote Required", description: "Depends on severity, affected areas, and whether polishing is needed." },
+  { name: "Pet Hair / Heavy Stain Removal", price: "Quote Required", description: "Extra charge depending on amount of pet hair, stains, or buildup." }
+];
+
 const pricing = [
-  {
-    name: "Regular Interior Detail",
-    price: "$90-$150",
-    description: "Interior cleaning with steam included. Price depends on vehicle size and condition.",
-    features: ["Vacuum and wipe down", "Steam cleaning included", "Dashboard & console cleaning", "Seats, carpets, and mats cleaned"]
-  },
-  {
-    name: "Exterior Detail",
-    price: "$65-$75",
-    description: "Exterior wash and shine to boost curb appeal and leave the vehicle looking fresh.",
-    features: ["Full exterior wash", "Wheel & tire cleaning", "Tire shine", "Clean finish"]
-  },
-  {
-    name: "Showroom Package",
-    price: "$150-$300",
-    description: "Complete interior and exterior refresh for the best overall result.",
-    featured: true,
-    features: ["Interior + exterior detail", "Steam cleaning included", "Full rejuvenation treatment", "Best overall value"]
-  }
+  { name: "Exterior Detail", price: "$65–$75", note: "Wash, wheels, tires, windows" },
+  { name: "Interior Detail", price: "$90–$150", note: "Includes steam cleaning" },
+  { name: "Showroom Package", price: "$150–$300", note: "Interior + exterior package" },
+  { name: "Wax Add-On", price: "$35–$45", note: "Gloss and protection" }
 ];
 
-const extras = [
-  {
-    name: "Headlight Restoration",
-    price: "$80 for both headlights",
-    description: "Multi-stage restoration to improve clarity, brightness, safety, and appearance."
-  },
-  {
-    name: "Water Spot / Water Stain Removal",
-    price: "Quote Required",
-    description: "Price depends on severity, affected areas, and whether polishing is needed."
-  },
-  {
-    name: "Carpet / Seat Shampoo",
-    price: "$50-$100",
-    description: "Deep shampoo and extraction for carpets, seats, stains, dirt, and odors."
-  },
-  {
-    name: "Clay Bar Treatment",
-    price: "$60-$90",
-    description: "Removes embedded contaminants and leaves the paint feeling smooth."
-  },
-  {
-    name: "Wax Protection",
-    price: "$35-$45",
-    description: "Add-on service that adds shine and short-term protection to your paint."
-  },
-  {
-    name: "Clay Bar + Wax",
-    price: "$90-$130",
-    description: "Paint decontamination followed by wax protection for a smoother, cleaner finish."
-  },
-  {
-    name: "Pet Hair Removal",
-    price: "Starting at $40",
-    description: "Extra charge depending on the amount of pet hair and vehicle condition."
-  },
-  {
-    name: "Polishing / Ceramic Coating",
-    price: "Quote Required",
-    description: "Text us for a custom quote based on paint condition and protection wanted."
-  }
-];
+const servicesGrid = document.getElementById("servicesGrid");
+const pricingGrid = document.getElementById("pricingGrid");
 
-function makeCard(item, index) {
-  return `
-    <article class="card ${item.featured ? 'featured' : ''}">
-      ${item.featured ? '<span class="badge">MOST POPULAR</span>' : ''}
-      <h3>${item.name}</h3>
-      <div class="price">${item.price}</div>
-      <p>${item.description || ''}</p>
-      ${item.features ? `<ul>${item.features.map(feature => `<li>${feature}</li>`).join('')}</ul>` : ''}
+if (servicesGrid) {
+  servicesGrid.innerHTML = services.map(service => `
+    <article class="service-card">
+      <h3>${service.name}</h3>
+      <strong>${service.price}</strong>
+      <p>${service.description}</p>
     </article>
-  `;
+  `).join("");
 }
 
-document.querySelector('.pricing-grid').innerHTML = pricing.map(makeCard).join('');
-document.querySelector('.extras-grid').innerHTML = extras.map(makeCard).join('');
-document.querySelector('#year').textContent = new Date().getFullYear();
+if (pricingGrid) {
+  pricingGrid.innerHTML = pricing.map(item => `
+    <article class="price-card">
+      <h3>${item.name}</h3>
+      <strong>${item.price}</strong>
+      <p>${item.note}</p>
+    </article>
+  `).join("");
+}
