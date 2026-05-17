@@ -3,41 +3,226 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marin Nava Detailing | Mobile Detailing Sonoma County</title>
-  <meta name="description" content="Marin Nava Detailing offers premium mobile car detailing in Sonoma County and surrounding areas. Text 707-477-7017 to book." />
+  <title>Marin Nava Detailing</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .main-services-clean {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 34px;
+    }
+
+    .main-service-card,
+    .addon-clean-card {
+      background: linear-gradient(180deg, rgba(13, 27, 48, 0.92), rgba(7, 14, 28, 0.92));
+      border: 1px solid rgba(72, 169, 255, 0.24);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35), inset 0 0 30px rgba(37, 150, 255, 0.05);
+    }
+
+    .main-service-card h3,
+    .addon-clean-card h3 {
+      margin-top: 0;
+      font-size: 1.35rem;
+    }
+
+    .main-service-card strong {
+      display: block;
+      color: #55c7ff;
+      font-size: 2rem;
+      margin: 12px 0 16px;
+      text-shadow: 0 0 18px rgba(55, 174, 255, .45);
+    }
+
+    .main-service-card p,
+    .addon-clean-card p {
+      color: rgba(235, 246, 255, 0.78);
+      line-height: 1.7;
+    }
+
+    .addons-clean-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .addon-clean-card {
+      padding: 18px 20px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .addon-clean-card span {
+      font-weight: 700;
+    }
+
+    .addon-clean-card b {
+      color: #55c7ff;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 850px) {
+      .main-services-clean,
+      .addons-clean-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
-    <a href="#home" class="brand" aria-label="Marin Nava Detailing home">
-      <img src="assets/logo.png" alt="Marin Nava Detailing logo" />
-    </a>
+    <a href="#home" class="brand"><img src="assets/logo.png" alt="Marin Nava Detailing logo" /></a>
     <nav class="nav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-<section id="pricing" class="pricing section-pad compact">
-  <div class="pricing-main">
-    <p class="eyebrow">Add-Ons</p>
-    <h2>Additional Services</h2>
-    <p>Add-ons can be included with any main service. Some services require a quote depending on condition.</p>
+      <a href="#services">Services</a>
+      <a href="#pricing">Add-Ons</a>
+      <a href="gallery.html">Our Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="sms:7074777017">☎ Text Us</a>
+  </header>
 
-    <div class="addon-grid">
-      <div class="addon-card"><span>Headlight Restoration</span><b>Quote Required</b></div>
-      <div class="addon-card"><span>Clay Bar Treatment</span><b>Starting at $60</b></div>
-      <div class="addon-card"><span>Clay Bar + Wax</span><b>Starting at $100</b></div>
-      <div class="addon-card"><span>Water Spot Removal</span><b>Quote Required</b></div>
-      <div class="addon-card"><span>Paint Polishing</span><b>Coming Soon</b></div>
-      <div class="addon-card"><span>Ceramic Coating</span><b>Coming Soon</b></div>
-    </div>
-  </div>
+  <main>
+    <section id="home" class="hero section-pad">
+      <div class="hero-bg-logo" aria-hidden="true">
+        <img src="assets/logo.png" alt="" />
+      </div>
 
-  <div class="addons-panel" id="contact">
-    <h3>Ready To Book?</h3>
-    <p class="fine-print">Send us a message with your vehicle type, location, and a few pictures for the most accurate quote.</p>
-    <a class="btn primary" href="sms:7074777017">Text Us To Book →</a>
-    <a class="btn ghost" href="tel:7074777017">☎ Call 707-477-7017</a>
-  </div>
-</section>
+      <div class="hero-content">
+        <p class="eyebrow">Premium Mobile Detailing</p>
+        <h1>Where Your Ride Gets The Glow <span>It Deserves.</span></h1>
+        <p class="hero-copy">Professional mobile detailing that brings the showroom to your driveway. Quality, trust, and perfection every time.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="sms:7074777017">☎ Text Us</a>
+          <a class="btn ghost" href="#services">Let's Get Started <span>→</span></a>
+        </div>
+
+        <div class="service-area">
+          <strong>📍 Proudly Serving Sonoma County</strong>
+          <p>Serving Santa Rosa, Petaluma, Rohnert Park, Windsor, Cotati, Penngrove, Sonoma, Glen Ellen, Healdsburg, and nearby areas. Additional transportation fee may apply for farther locations.</p>
+        </div>
+      </div>
+
+      <aside class="social-stack" aria-label="Social links">
+        <a class="social-card" href="https://www.instagram.com/marin.nava.detailing?igsh=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener">
+          <span class="social-icon">📸</span>
+          <span><strong>Instagram</strong><small>@marin.nava.detailing</small></span>
+          <b>→</b>
+        </a>
+        <a class="social-card" href="https://www.tiktok.com/@marinnava_detaili?_r=1&_t=ZP-96Pp8aWdC4l" target="_blank" rel="noopener">
+          <span class="social-icon">🎵</span>
+          <span><strong>TikTok</strong><small>@marinnava_detaili</small></span>
+          <b>→</b>
+        </a>
+      </aside>
+    </section>
+
+    <section id="about" class="about-card section-pad compact">
+      <div class="about-text">
+        <p class="eyebrow">About Us</p>
+        <h2>Detailing Is Our Passion</h2>
+        <p>Marin Nava Detailing is run by two college guys, Alex and Mateo Marin, who care about cars, hard work, and making every ride look its best. With 2+ years of experience, we bring reliable mobile detailing straight to you.</p>
+      </div>
+      <div class="value-grid">
+        <div><span>🛡️</span><h3>Quality</h3><p>Top-tier products and proven techniques.</p></div>
+        <div><span>⏱️</span><h3>Convenience</h3><p>We come to you so you can stay stress-free.</p></div>
+        <div><span>✨</span><h3>Attention To Detail</h3><p>No shortcuts. Every inch gets care.</p></div>
+        <div><span>🤝</span><h3>Trusted Service</h3><p>Reliable, professional, and committed.</p></div>
+      </div>
+    </section>
+
+    <section id="services" class="section-pad">
+      <div class="section-title">
+        <p class="eyebrow">Main Services</p>
+        <h2>Professional Mobile Detailing</h2>
+        <p>Choose the service your vehicle needs. Final pricing depends on vehicle size, condition, and time required.</p>
+      </div>
+
+      <div class="main-services-clean">
+        <article class="main-service-card">
+          <h3>Exterior Detail</h3>
+          <strong>$65–$95+</strong>
+          <p>Foam wash, wheels, tires, door jambs, exterior wipe down, wax protection, and tire shine.</p>
+        </article>
+
+        <article class="main-service-card">
+          <h3>Interior Detail</h3>
+          <strong>$120–$250+</strong>
+          <p>Steam cleaning, deep vacuum, full interior wipe down, center console, steering wheel, trim, carpets, seats, windows, and tight spot/detail brush cleaning.</p>
+        </article>
+
+        <article class="main-service-card">
+          <h3>Showroom Package</h3>
+          <strong>$165–$250+</strong>
+          <p>Full interior and exterior package for a complete clean inside and out.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing section-pad compact">
+      <div class="pricing-main">
+        <p class="eyebrow">Add-Ons</p>
+        <h2>Additional Services</h2>
+        <p>Add-ons can be included with any main service. Some services require a quote depending on condition.</p>
+
+        <div class="addons-clean-grid">
+          <div class="addon-clean-card"><span>Headlight Restoration</span><b>Quote Required</b></div>
+          <div class="addon-clean-card"><span>Clay Bar Treatment</span><b>Starting at $60</b></div>
+          <div class="addon-clean-card"><span>Clay Bar + Wax</span><b>Starting at $100</b></div>
+          <div class="addon-clean-card"><span>Water Spot Removal</span><b>Quote Required</b></div>
+          <div class="addon-clean-card"><span>Paint Polishing</span><b>Coming Soon</b></div>
+          <div class="addon-clean-card"><span>Ceramic Coating</span><b>Coming Soon</b></div>
+        </div>
+      </div>
+
+      <div class="addons-panel" id="contact">
+        <h3>Ready To Book?</h3>
+        <p class="fine-print">Send us a message with your vehicle type, location, and a few pictures for the most accurate quote.</p>
+        <a class="btn primary" href="sms:7074777017">Text Us To Book →</a>
+        <a class="btn ghost" href="tel:7074777017">☎ Call 707-477-7017</a>
+      </div>
+    </section>
+
+    <section id="work" class="section-pad work-preview">
+      <div class="section-title">
+        <p class="eyebrow">Our Work</p>
+        <h2>Before & After Transformations</h2>
+        <p>Real results from real cars.</p>
+      </div>
+      <div class="work-grid">
+        <div class="work-card"><div class="split-photo"><span>Before</span><span>After</span></div><h3>Exterior Detailing</h3></div>
+        <div class="work-card"><div class="split-photo"><span>Before</span><span>After</span></div><h3>Interior Detailing</h3></div>
+        <div class="work-card highlight-card">
+          <div class="compare-slider small" style="--position: 50%;">
+            <img class="before-img" src="assets/gallery/headlight-before.png" alt="Before headlight restoration">
+            <img class="after-img" src="assets/gallery/headlight-after.png" alt="After headlight restoration">
+            <div class="slider-line"></div>
+            <div class="slider-button">↔</div>
+            <input type="range" min="0" max="100" value="50" aria-label="Move to compare before and after headlight restoration">
+            <span class="before-label">Before</span><span class="after-label">After</span>
+          </div>
+          <h3>Headlight Restoration</h3>
+        </div>
+      </div>
+      <a class="btn ghost centered" href="gallery.html">📷 View Full Gallery</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Marin Nava Detailing. All rights reserved.</p>
+    <p>Mobile Detailing • Sonoma County & Surrounding Areas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
