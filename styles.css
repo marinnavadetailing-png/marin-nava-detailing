@@ -177,15 +177,15 @@ a{color:inherit;text-decoration:none}.site-header{position:sticky;top:0;z-index:
 }
 
 .exterior-service {
-  background-image: url("assets/exterior-card.jpg");
+  background-image: url("assets/exterior-detail.png");
 }
 
 .interior-service {
-  background-image: url("assets/interior-card.jpg");
+  background-image: url("assets/interior-card.png");
 }
 
 .full-service {
-  background-image: url("assets/full-detail-card.jpg");
+  background-image: url("assets/showroom-package.png");
 }
 
 /* Quote CTA panel */
