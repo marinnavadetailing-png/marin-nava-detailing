@@ -144,3 +144,75 @@ a{color:inherit;text-decoration:none}.site-header{position:sticky;top:0;z-index:
   .gallery-photo{height:260px;}
   .work-grid,.pricing-grid{grid-template-columns:1fr;}
 }
+/* Photo background service cards */
+.service-photo-card {
+  position: relative;
+  min-height: 330px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  transition: 0.25s ease;
+}
+
+.service-photo-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(21,151,255,.75);
+  box-shadow: 0 0 36px rgba(21,151,255,.3);
+}
+
+.service-card-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.82)),
+    linear-gradient(135deg, rgba(21,151,255,.18), rgba(0,0,0,.15));
+  z-index: 1;
+}
+
+.service-card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.exterior-service {
+  background-image: url("assets/exterior-card.jpg");
+}
+
+.interior-service {
+  background-image: url("assets/interior-card.jpg");
+}
+
+.full-service {
+  background-image: url("assets/full-detail-card.jpg");
+}
+
+/* Quote CTA panel */
+.quote-cta-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.quote-cta-panel h3 {
+  font-size: 1.8rem;
+  margin-bottom: 4px;
+}
+
+.quote-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 10px;
+  display: grid;
+  gap: 10px;
+  color: rgba(235, 246, 255, 0.86);
+  font-weight: 700;
+}
+
+.quote-benefits li {
+  padding: 10px 12px;
+  border: 1px solid rgba(21,151,255,.22);
+  border-radius: 12px;
+  background: rgba(255,255,255,.04);
+}
