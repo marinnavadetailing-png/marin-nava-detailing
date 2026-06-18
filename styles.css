@@ -216,3 +216,11 @@ a{color:inherit;text-decoration:none}.site-header{position:sticky;top:0;z-index:
   border-radius: 12px;
   background: rgba(255,255,255,.04);
 }
+.contact-number {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #55c7ff;
+  text-align: center;
+  margin: 12px 0 18px;
+  text-shadow: 0 0 18px rgba(55, 174, 255, .45);
+}
