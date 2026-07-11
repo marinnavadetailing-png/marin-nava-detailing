@@ -185,6 +185,9 @@ a{color:inherit;text-decoration:none}.site-header{position:sticky;top:0;z-index:
 }
 
 .full-service {
+  background-image: url("assets/showroom-package.png");
+  background-size: cover;
+  background-position: center;
 }
 
 /* Quote CTA panel */
