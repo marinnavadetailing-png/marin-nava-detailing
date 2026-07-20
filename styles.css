@@ -304,6 +304,7 @@ a{color:inherit;text-decoration:none}.site-header{position:sticky;top:0;z-index:
   position: relative;
   min-height: calc(100vh - 82px);
   display: grid;
+  grid-template-columns: 1fr;
   place-items: center;
   text-align: center;
   padding: 110px 20px 80px;
@@ -339,8 +340,10 @@ a{color:inherit;text-decoration:none}.site-header{position:sticky;top:0;z-index:
 .premium-hero-content {
   position: relative;
   z-index: 2;
-  max-width: 920px;
+  width: min(100%, 920px);
   margin: 0 auto;
+  text-align: center;
+  justify-self: center;
 }
 
 .hero-kicker {
