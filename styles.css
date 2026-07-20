@@ -657,3 +657,102 @@ a{color:inherit;text-decoration:none}.site-header{position:sticky;top:0;z-index:
     padding: 0 20px 22px;
   }
 }
+/* =========================================================
+   HOW TO BOOK SECTION
+   ========================================================= */
+
+.booking-steps-section {
+  background:
+    radial-gradient(
+      circle at 50% 15%,
+      rgba(21,151,255,.1),
+      transparent 35%
+    ),
+    #030609;
+}
+
+.booking-steps-grid {
+  width: min(100%, 1180px);
+  margin: 46px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.booking-step-card {
+  position: relative;
+  min-height: 390px;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,.11);
+  border-radius: 22px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,.065),
+      rgba(255,255,255,.025)
+    );
+  box-shadow: 0 22px 55px rgba(0,0,0,.25);
+}
+
+.booking-step-number {
+  position: absolute;
+  top: 24px;
+  right: 26px;
+  color: rgba(255,255,255,.12);
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+.booking-step-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 26px;
+  border: 1px solid rgba(85,199,255,.3);
+  border-radius: 16px;
+  background: rgba(21,151,255,.1);
+  font-size: 1.75rem;
+}
+
+.booking-step-card h3 {
+  margin: 0 0 14px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.booking-step-card p {
+  margin: 0;
+  color: rgba(255,255,255,.68);
+  line-height: 1.75;
+}
+
+.booking-step-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.booking-step-actions .btn {
+  width: 100%;
+}
+
+.booking-final-action {
+  margin: 34px auto 0;
+  text-align: center;
+}
+
+.booking-final-action p {
+  margin-bottom: 16px;
+  color: rgba(255,255,255,.67);
+}
+
+@media (max-width: 900px) {
+  .booking-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-step-card {
+    min-height: auto;
+  }
+}
