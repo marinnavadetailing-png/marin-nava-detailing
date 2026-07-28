@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://marinnavadetailing-png.github.io/marin-nava-detailing/sitemap.xml
