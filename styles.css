@@ -320,7 +320,7 @@ a{color:inherit;text-decoration:none}.site-header{position:sticky;top:0;z-index:
   overflow: hidden;
 }
 
-.premium-hero-media video {
+.premium-hero-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -457,7 +457,7 @@ a{color:inherit;text-decoration:none}.site-header{position:sticky;top:0;z-index:
     padding: 92px 20px 62px;
   }
 
-  .premium-hero-media video {
+  .premium-hero-media img {
     object-position: center center;
     opacity: .62;
   }
