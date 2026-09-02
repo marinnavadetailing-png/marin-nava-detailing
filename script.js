@@ -31,3 +31,28 @@ document.querySelectorAll(".faq-question").forEach((button) => {
     }
   });
 });
+// Mobile navigation menu
+const mobileMenuButton = document.querySelector('.mobile-menu-button');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+if (mobileMenuButton && mobileMenu) {
+  mobileMenuButton.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+
+    mobileMenuButton.classList.toggle('active', isOpen);
+    mobileMenuButton.setAttribute('aria-expanded', isOpen);
+    mobileMenuButton.setAttribute(
+      'aria-label',
+      isOpen ? 'Close navigation menu' : 'Open navigation menu'
+    );
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      mobileMenuButton.classList.remove('active');
+      mobileMenuButton.setAttribute('aria-expanded', 'false');
+      mobileMenuButton.setAttribute('aria-label', 'Open navigation menu');
+    });
+  });
+}
