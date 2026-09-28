@@ -69,7 +69,7 @@ document.querySelectorAll('a[href*="booking.detailermade.com"]').forEach(link =>
 document.querySelectorAll('a[href*="lead.detailermade.com"]').forEach(link => {
   link.addEventListener('click', () => {
     if (typeof fbq === 'function') {
-      fbq('track', 'Lead');
+      fbq('track', 'InitiateCheckout');
     }
   });
 });
