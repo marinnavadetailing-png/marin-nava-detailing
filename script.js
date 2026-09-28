@@ -56,3 +56,20 @@ if (mobileMenuButton && mobileMenu) {
     });
   });
 }
+// Meta Pixel tracking for DetailerMade buttons
+
+document.querySelectorAll('a[href*="booking.detailermade.com"]').forEach(link => {
+  link.addEventListener('click', () => {
+    if (typeof fbq === 'function') {
+      fbq('track', 'InitiateCheckout');
+    }
+  });
+});
+
+document.querySelectorAll('a[href*="lead.detailermade.com"]').forEach(link => {
+  link.addEventListener('click', () => {
+    if (typeof fbq === 'function') {
+      fbq('track', 'Lead');
+    }
+  });
+});
